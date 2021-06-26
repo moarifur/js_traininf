@@ -57,13 +57,13 @@
 
 */ 
 
-function sonn(n) {
-    if(n <= 1)
-        return n
-    return n + sonn(n-1)    
-}
+// function sonn(n) {
+//     if(n <= 1)
+//         return n
+//     return n + sonn(n-1)    
+// }
 
-console.log(sonn(8))
+// console.log(sonn(8))
 
 
 /* --------------------- Class# 03(2): Find Fibonacci series for user defined range -------------------------------------
@@ -80,3 +80,38 @@ console.log(sonn(8))
 //     return fiboFunc(n-1) + fiboFunc(n-2)
 // }
 // console.log(fiboFunc(8))
+
+
+/* --------------------- Class# 04/05: Array -------------------------------------
+
+
+
+-----------------------------------------------------------------------------------------------------------------------*/ 
+
+let car = 'Rols'
+/* --------------------------- Create a new array -----------------------------
+    - With []: Old school system
+    - with constructor function
+
+*/ 
+
+// With []: Old school system
+const cars = ["Saab", "Volvo", "BMW"]
+// const fruits = []
+
+// with constructor function
+const fruits = new Array()
+console.log(fruits)
+
+cars.forEach( car => {
+    console.log(car)
+})
+
+// Object - 1. Propertise, 2. Method
+
+
+
+
+
+// DOM: Document Object Model
+// CRUD
