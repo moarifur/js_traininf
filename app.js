@@ -83,9 +83,8 @@
 
 
 /* --------------------- Class# 04/05: Array -------------------------------------
-
-
-
+- Create a new array
+- Read an array
 -----------------------------------------------------------------------------------------------------------------------*/ 
 
 let car = 'Rols'
@@ -115,3 +114,60 @@ cars.forEach( car => {
 
 // DOM: Document Object Model
 // CRUD
+
+/* ------------- Quiz001: Temperature calculator -------------------
+    Use Javascript function to build a Temperature calculator
+    - Celsious to Fahrenheit
+    - Fahrenheit to celsious
+*/ 
+
+// Coding Step 1:
+// let tempCtoF = c => {
+//     let result = (c * 1.8) + 32
+//     return result
+// } 
+// console.log(tempCtoF(40))
+
+// Coding Step 2:
+// let tempCtoF = c => (c*1.8)+32
+// console.log(tempCtoF(40))
+
+// Coding Step 3:
+let tempCtoF = c => `Celsius to Fahrenheit is: ${(c*1.8)+32}`
+tempCtoF(40)
+tempCtoF(12)
+tempCtoF(33)
+tempCtoF(35)
+
+/*
+    Function: 'Unit of work' 
+    - Defination
+    - Call
+*/ 
+
+/* 
+--------------------- Class# 06: Array -------------------------------------
+array: object(Sentence/ Phrase)
+    - Properties(Attribute)(Noun)
+    - Method(Action)(Verb)
+----------------------------------------------------------------------------
+*/ 
+
+let car = {
+    name: 'BMW',
+    model: '3670AC',
+    wheel: 4,
+    color: 'Black',
+    speed: '120 KMPH',
+    start: function(){console.log('Car is Starting...')},
+    stop: function(){console.log('Car is Stopping...')},
+    reverse: function(){console.log('Car is rolling back...')},
+    parking: function(){console.log('Car is Getting Parked...')},
+    drive: function(){console.log('I am driving...')}
+}
+
+console.log(car.name)
+
+// Assignment102: ProjectBased: bkash phone(button) app 
+// Ref: https://www.youtube.com/watch?v=DohUF6AnSkQ
+// Programming Ref: https://www.w3schools.com/jsref/jsref_obj_array.asp
