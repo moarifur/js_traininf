@@ -87,7 +87,7 @@
 - Read an array
 -----------------------------------------------------------------------------------------------------------------------*/ 
 
-let car = 'Rols'
+// let car = 'Rols'
 /* --------------------------- Create a new array -----------------------------
     - With []: Old school system
     - with constructor function
@@ -95,16 +95,16 @@ let car = 'Rols'
 */ 
 
 // With []: Old school system
-const cars = ["Saab", "Volvo", "BMW"]
-// const fruits = []
+// const cars = ["Saab", "Volvo", "BMW"]
+// // const fruits = []
 
-// with constructor function
-const fruits = new Array()
-console.log(fruits)
+// // with constructor function
+// const fruits = new Array()
+// console.log(fruits)
 
-cars.forEach( car => {
-    console.log(car)
-})
+// cars.forEach( car => {
+//     console.log(car)
+// })
 
 // Object - 1. Propertise, 2. Method
 
@@ -133,11 +133,11 @@ cars.forEach( car => {
 // console.log(tempCtoF(40))
 
 // Coding Step 3:
-let tempCtoF = c => `Celsius to Fahrenheit is: ${(c*1.8)+32}`
-tempCtoF(40)
-tempCtoF(12)
-tempCtoF(33)
-tempCtoF(35)
+// let tempCtoF = c => `Celsius to Fahrenheit is: ${(c*1.8)+32}`
+// tempCtoF(40)
+// tempCtoF(12)
+// tempCtoF(33)
+// tempCtoF(35)
 
 /*
     Function: 'Unit of work' 
@@ -146,28 +146,53 @@ tempCtoF(35)
 */ 
 
 /* 
---------------------- Class# 06: Array -------------------------------------
+--------------------- Class# 06: Array: Part02 -------------------------------------
 array: object(Sentence/ Phrase)
     - Properties(Attribute)(Noun)
     - Method(Action)(Verb)
 ----------------------------------------------------------------------------
 */ 
 
-let car = {
-    name: 'BMW',
-    model: '3670AC',
-    wheel: 4,
-    color: 'Black',
-    speed: '120 KMPH',
-    start: function(){console.log('Car is Starting...')},
-    stop: function(){console.log('Car is Stopping...')},
-    reverse: function(){console.log('Car is rolling back...')},
-    parking: function(){console.log('Car is Getting Parked...')},
-    drive: function(){console.log('I am driving...')}
-}
+// let car = {
+//     name: 'BMW',
+//     model: '3670AC',
+//     wheel: 4,
+//     color: 'Black',
+//     speed: '120 KMPH',
+//     start: function(){console.log('Car is Starting...')},
+//     stop: function(){console.log('Car is Stopping...')},
+//     reverse: function(){console.log('Car is rolling back...')},
+//     parking: function(){console.log('Car is Getting Parked...')},
+//     drive: function(){console.log('I am driving...')}
+// }
 
-console.log(car.name)
+// console.log(car.name)
 
 // Assignment102: ProjectBased: bkash phone(button) app 
 // Ref: https://www.youtube.com/watch?v=DohUF6AnSkQ
 // Programming Ref: https://www.w3schools.com/jsref/jsref_obj_array.asp
+
+/*
+    Step1: Press *247# - MenuBar
+    Step2: Create Menubar
+
+*/ 
+
+// Create Menubar
+const items = ['Send Money', 'Send Money to Non bKash User', 'Mobile Recharge']
+
+// Read Menubar
+// console.log(items)
+for (let item of items) {
+    let li = document.createElement("LI")                    // Create a <li> node
+    // let textnode = item                                  // Create a text node
+    let textnode = document.createTextNode(item)            // Create a text node
+    li.append(textnode)                                    // Append the text to <li>
+    document.querySelector('.menu').append(li)
+}
+
+
+// const menu = document.querySelector('.menu')
+// console.log(menu)
+
+
