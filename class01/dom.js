@@ -45,3 +45,13 @@ changeAmount.append(newPara) // changeAmount = kothae add korlam and newPara = k
 // console.log(changeAmount.children)
 // VM8084:1 HTMLCollection(2) [p, p]0: p1: plength: 2__proto__: HTMLCollection
 // undefined
+
+/*
+
+creation: Element - createElement()
+Modification: Text - innerText, textContent 
+selection: class(.) and id(#) - querySelector()
+insertion: Element - append()
+
+*/ 
+
